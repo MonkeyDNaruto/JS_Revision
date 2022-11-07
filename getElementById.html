@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementById</title>
+</head>
+<body>
+    <div id="test">Changed Me</div>
+    <button type="button" id="button" onclick="click();">Click2Change</button>
+
+    <script>
+        function $(id) {
+            return document.getElementById(id);
+        }
+
+        function click() {
+            $('test').style.border = "1px solid red";
+            $('test').innerHTML = "border added";
+            $('button').innerHTML = "changed";
+            $('button').disabled = true;
+        }
+    </script>
+    
+</body>
+</html>
