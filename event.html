@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <script>
+        function name() {
+            alert("txt");
+        }
+    </script>
+</head>
+<body>
+    <span onclick="name()">Click me</span>
+
+    <hr>
+    <button ondblclick="name()">DBL Click</button>
+    <hr>
+    <input onfocus="name()" type="text">
+    <hr>
+    <input onblur="name()" type="text">
+    <hr>
+    <span onmouseover="name()">Mouse over</span>
+    <hr>
+    <span onmousedown="name()">Mouse down</span>
+    <hr>
+    <span onmouseup="name()">Mouse up</span>
+    <hr>
+    <span onmousemove="name()">Mouse move</span>
+    <hr>
+    <input onkeydown="name()" type="text" placeholder="on key down">
+    <hr>
+    <input onkeypress="name()" type="text" placeholder="on key press">
+    <hr>
+    <input onkeyup="name()" type="text" placeholder="on key up">
+
+    
+</body>
+</html>
