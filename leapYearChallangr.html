@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Year Challange</title>
+</head>
+<body>
+
+    <script>
+        function isLeap(year) {
+            if(year%4 === 0){
+                if(year%100 === 0){
+                    if(year%400 === 0){
+                        return "Is a leap year"
+                    } else {
+                        return "Is not a leap year"
+                    }
+                } else {
+                    return "is a leap year"
+                }
+            } else {
+                return "Is not a leap year"
+            }
+        }
+
+        var ask = prompt("Which Year is it?");
+        alert(isLeap(ask));
+    </script>
+    
+</body>
+</html>
