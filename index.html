@@ -27,12 +27,13 @@
   </footer>
 
   <script>
+    var numberOfDrumButton = document.querySelectorAll(".drum").length ;
 
-    for( var i = 0; i < document.querySelector(".drum"); i++) {
-      document.querySelector(".drum").addEventListener("click", function () {
+    for( var i = 0; i < numberOfDrumButton ; i++) {
+      document.querySelectorAll(".drum")[i].addEventListener("click", function () {
       alert("HHHH");
     });
-    }
+    };
 
   
   </script>
